@@ -1,0 +1,57 @@
+/* src/components/basic/button/group/group.less */
+/* authed by sunjia032 2018-08-01*/
+
+.vp-btn-group {
+    display: inline-block;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin: 5px;
+    padding: 0 !important;
+    & * {
+        margin: 0;
+        border-radius: 0;
+        float: left;
+    }
+    &>*:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    &>*:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    *[class^='vp-btn'][class*='-hollow']+*[class^='vp-btn'][class*='-hollow'],
+    *[class^='vp-btn'][class*='-hollow']+*[class^='vp-btn'][class*='-dashed'] {
+        border-left: none;
+    }
+    &>*[class*='-dashed'] {
+        border-right: none;
+    }
+    &>*[class*='-dashed']:last-child {
+        border-right: 1px dashed;
+    }
+    &.vp-btn-round {
+        &>*:first-child {}
+    }
+}
+.vp-btn-group-vertical{
+    .vp-btn{
+        display: block;
+        float: none;
+    }
+    &.vp-btn-round .vp-btn{
+        min-width: 0;
+    }
+    &>*:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &>*:last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

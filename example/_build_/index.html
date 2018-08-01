@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vpui2.0</title>
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <link rel="stylesheet" type="text/css" href="../../dist/vp.css">
+</head>
+
+<body>
+    <vp-layout id="app">
+    	<vp-header>Vpui 2.0</vp-header>
+        <vp-layout>
+            <vp-side klass="vp-color-sys-bg">
+                <vp-tree :data="tree"></vp-tree>
+            </vp-side>
+            <vp-content>
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+            </vp-content>
+        </vp-layout>    	
+    	<vp-footer>Welcome To VPUI 2.0@2018~Authed by Priscilla Sun(sunjia032)</vp-footer>
+    </vp-layout>
+<script type="text/javascript" src="index.js"></script></body>
+</html>

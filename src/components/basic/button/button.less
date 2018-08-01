@@ -1,0 +1,133 @@
+/* src/components/basic/button/button.less */
+/* authed by sunjia032 2018-07-24*/
+@import '../../../style/var.less';
+@color_border:#ccc;/*蓝*/
+
+
+.vp-btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin:5px;
+    padding:0 16px;
+    font-size: 12px;
+    font-family: @family;
+    min-height: 20px;
+    height: 28px;
+    min-width: 72px;
+    line-height: 20px; 
+    cursor: pointer;
+    outline:none;
+    border:1px solid @color_main;
+    border-radius: 2px; 
+    color: white;
+    background-color: @color_main; 
+    -webkit-text-stroke-width:0;
+    &:last-child{
+        margin-right:0;
+    } 
+    &:hover{
+        opacity: 0.85;
+        filter:alpha(opacity=85); 
+    } 
+    &.vp-btn-normal{
+        color: white !important;
+        *{
+            color:white !important;
+        }
+    }
+}
+
+/* size */
+.vp-btn-large{ 
+    font-size: 14px;
+    line-height: 24px;
+    height: 32px; 
+    min-width: 96px;
+    padding:0 24px;
+    &:before{
+        font-size: 20px;
+    } 
+    .iconfont{
+        font-size: 20px;
+    }
+}
+.vp-btn-small{ 
+    height: 24px;
+    line-height: 20px;
+    font-size: 12px;
+    padding:0 8px;
+    min-width: 40px;
+    &:before{
+        font-size: 12px;
+    } 
+    .iconfont{
+        font-size: 12px;
+    }
+}
+
+/* hollow dashed text */
+.vp-btn-type-constructor(@class){
+    .vp-btn-@{class}{
+        background-color: transparent !important; 
+        color:@color_main;
+        .fn-btn-border(@class);
+    }
+}
+.fn-btn-border(@type) when (@type = dashed){
+    border-style:dashed;
+    &:hover{ 
+        border-style:dashed;
+    }
+}
+.fn-btn-border(@type) when (@type = text){
+    border-style:hidden;
+    background-color: transparent !important; 
+    &:hover{ 
+        border-style:hidden;
+    }
+}
+.vp-btn-type-constructor(hollow);    
+.vp-btn-type-constructor(dashed);  
+.vp-btn-type-constructor(text); 
+
+/* color */
+.vp-btn-color-constructor(@color,@name){
+    .vp-btn-@{name}{
+        background-color: @color;
+        border-color: @color; 
+        color:@color;
+    } 
+    .vp-btn.vp-btn-@{name}{
+        color:white !important;
+    }
+    .vp-btn-hollow.vp-btn-@{name},.vp-btn-dashed.vp-btn-@{name},.vp-btn-text.vp-btn-@{name}{
+        color:@color !important;
+    } 
+}
+.vp-btn-color-constructor(@color_main,main);
+.vp-btn-color-constructor(@color_danger,danger);
+.vp-btn-color-constructor(@color_success,success);
+.vp-btn-color-constructor(@color_sys,sys);
+.vp-btn-color-constructor(@color_warn,warn);
+.vp-btn-color-constructor(@color_plain,plain);
+.vp-btn-color-constructor(@color_highlight,highlight); 
+
+/* disable */
+*[class^="vp-btn"][disable='true']{
+    border-color: @color_disable !important;
+    background-color: @color_bg !important;
+    color: @color_plain !important;
+    &:hover{
+        border-color: @color_disable !important;
+        background-color: @color_bg !important;
+        color: @color_plain !important;
+    }
+} 
+*[class^="vp-btn"][class~="vp-btn-text"][disable='true'],*[class^="vp-btn"][class~="vp-btn-hollow"][disable='true'],*[class^="vp-btn"][class~="vp-btn-dashed"][disable='true']{     
+    background-color: transparent !important;     
+    &:hover{
+        background-color: transparent !important;
+    }
+}
+

@@ -1,0 +1,148 @@
+/* ------- color -------*/
+/*蓝*/
+/*浅蓝*/
+/*橙*/
+/*红*/
+/*浅红*/
+/*黄*/
+/*浅黄*/
+/*绿*/
+/*浅绿*/
+/*紫*/
+/*黑*/
+/*深灰*/
+/*灰*/
+/*浅灰*/
+/*浅灰*/
+/* ------- font -------*/
+/* ------- grid -------*/
+/* ------- structure -------*/
+/* 导航高度 */
+/* 菜单宽度 */
+/* 导航文字颜色 */
+/*  base 公共基础 */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, "Microsoft Yahei", "Helvetica Neue", "Hiragino Sans GB", sans-serif;
+  overflow-x: hidden;
+  color: #666;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: white;
+}
+a {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  color: #4475e8;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+label,
+span {
+  color: #666;
+  font-size: 12px;
+}
+.vp-color-main {
+  color: #4475e8;
+}
+.vp-color-main-bg {
+  background-color: #4475e8;
+  color: white;
+}
+.vp-color-main-tag {
+  background-color: #f0f8fd;
+}
+.vp-color-highlight {
+  color: #ff6e40;
+}
+.vp-color-highlight-bg {
+  background-color: #ff6e40;
+  color: white;
+}
+.vp-color-danger {
+  color: #cc3232;
+}
+.vp-color-danger-bg {
+  background-color: #cc3232;
+  color: white;
+}
+.vp-color-danger-tag {
+  background-color: #fdeded;
+}
+.vp-color-success {
+  color: #3dbd7d;
+}
+.vp-color-success-bg {
+  background-color: #3dbd7d;
+  color: white;
+}
+.vp-color-success-tag {
+  background-color: #ebf8f2;
+}
+.vp-color-sys {
+  color: #3b475e;
+}
+.vp-color-sys-bg {
+  background-color: #3b475e;
+  color: white;
+}
+.vp-color-plain {
+  color: #ccc;
+}
+.vp-color-plain-bg {
+  background-color: #ccc;
+}
+.vp-color-disable {
+  color: #d9d9d9;
+}
+.vp-color-disable-bg {
+  background-color: #d9d9d9;
+}
+.vp-color-seperator {
+  color: #e1e1e1;
+}
+.vp-color-seperator-bg {
+  background-color: #e1e1e1;
+}
+.vp-color-bg {
+  background-color: #f3f3f3;
+}
+.vp-color-mask {
+  background-color: rgba(225, 225, 225, 0.4);
+}
+.vp-color-title {
+  color: #333;
+}
+.vp-color-title-bg {
+  background-color: #333;
+}
+.vp-color-text {
+  color: #666;
+}
+.vp-color-text-bg {
+  background-color: #666;
+}
+.vp-color-subtext {
+  color: #999;
+}
+.vp-color-subtext-bg {
+  background-color: #999;
+}
+.vp-color-tooltip {
+  color: rgba(225, 225, 225, 0.7);
+}
+.vp-color-tooltip-bg {
+  background-color: rgba(225, 225, 225, 0.7);
+}

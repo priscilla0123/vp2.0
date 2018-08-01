@@ -1,0 +1,27 @@
+.example_layout {
+    .title {
+        line-height: 50px;
+        padding-left: 40px;
+        font-weight: bold;
+        border-top: 1px dashed;
+        &:first-child {
+            border: none;
+        }
+    }
+    &>.vp-layout {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .vp-content {
+        text-align: center;
+        line-height: 100px;
+        height: 100px; 
+    }
+    .vp-side {
+        text-align: center;
+        line-height: 100px;
+    }
+    .vp-header,.vp-footer{
+        line-height: 48px;
+    }
+}

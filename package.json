@@ -1,0 +1,36 @@
+{
+  "name": "vp",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --w",
+    "example": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Priscilla Sun",
+    "url": "https://github.com/priscilla0123"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^4.5.2",
+    "style-loader": "^0.21.0",
+    "vue": "^2.5.2",
+    "vue-property-decorator": "^6.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "2.1.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.7.0",
+    "less-loader": "^4.1.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.7.2",
+    "vue-loader": "^12.0.3",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.2",
+    "webpack": "^2.5.0"
+  }
+}
