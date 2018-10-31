@@ -1,0 +1,99 @@
+<template>
+    <ul class="month">
+        <li class="month-item" v-for="(month, index) in months">
+            <span @mouseenter="curIndex = index" @mouseleave="curIndex = undefined" @click="check(month, index)" :class="{ 
+                active: curIndex === index,
+                checked: checkIndex === index,
+                disable: isDisable(index)
+            }">{{ month }}</span>
+        </li>
+    </ul>
+</template>
+<script>
+const MONTH = {
+    en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    zh: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一', '十二']
+};
+import { createYearArray } from './calendar'
+export default {
+    name: 'monthpanel',
+    props: {
+        value: {
+            type: Number | String,
+            default: new Date().getMonth()
+        },
+        lang: {
+            type: String,
+            default: 'en'
+        },
+        min: {
+            type: Number | String
+        },
+        max: {
+            type: Number | String
+        }
+    },
+    data() {
+        return {
+            months: ['en', 'zh'].indexOf(this.lang) > -1 ? MONTH[this.lang] : MONTH['en'],
+            curIndex: undefined,
+            checkIndex: undefined
+        }
+    },
+    created() {
+        this.checkIndex = this.months.indexOf(this.months[this.value - 1]);
+    },
+    methods: {
+        check(month, index) {
+            if (!this.isDisable(index)) {
+                this.checkIndex = index;
+                this.$emit('input', this.months.indexOf(month) + 1);
+                this.$emit('change', this.months.indexOf(month) + 1);
+            }
+        },
+        isDisable(index) {
+            return (this.min && index+1 < this.min) || (this.max && index+1 > this.max)
+        }
+    },
+    watch: {
+        value(c) {
+            this.checkIndex = this.months.indexOf(this.months[c - 1])
+        }
+    }
+}
+
+</script>
+<style lang="less" scoped>
+.month {
+    width: 216px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+        width: 33.33%;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        >span {
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px 6px;
+            border-radius: 3px;
+            transition: all .2s;
+            &.active {
+                background-color: #F0F8FD;
+                color: #49a9ee;
+            }
+            &.checked {
+                background-color: #4475E8;
+                color: #fff;
+            }
+            &.disable {
+                background-color: #ddd;
+                color: #fff;
+            }
+        }
+    }
+}
+
+</style>
