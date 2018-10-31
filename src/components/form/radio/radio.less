@@ -1,0 +1,40 @@
+/* src/components/form/radio/radio.less */
+/* authed by sunjia032 2018-08-02*/
+
+.vp-radio {
+    overflow: hidden; 
+    display: inline;
+    input[type=radio] {
+        display: none;
+    }
+    input:disabled+.vp-font {
+        color: #d9d9d9 !important;
+    }     
+    &-label {
+        cursor: pointer;
+        margin-right: 32px;
+        position: relative;
+        padding-left: 20px;
+        &:hover{
+            & .vp-font {
+                color: #4475e8;
+            }
+        }
+    }
+    &-disable {
+        color: #ccc;
+    }
+    &-disable>* {
+        color: #ccc;
+        cursor: not-allowed;
+    }
+    .vp-font {
+        position: absolute;
+        line-height: 14px;
+        margin-right: 6px;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+}
+ 

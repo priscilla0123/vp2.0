@@ -11,8 +11,8 @@ export default class Col extends Vue {
     @Prop({ default: 0 }) offset!: String | Number;
     @Prop({ default: false }) center!: String | Boolean;
 
-    get Klass(): String {
+    get Klass(): String { 
         return ('vp-col-' + this.size) + (this.offset > 0 ? ' vp-col-offset-' + this.offset : '') +
-            (this.center ? ' vp-center' : '');
+            (this.center || this.center === '' ? ' vp-center' : '');
     }
 }

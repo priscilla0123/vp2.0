@@ -1,0 +1,44 @@
+/* src/components/form/checkbox/checkbox.less */
+/* authed by sunjia032 2018-08-02*/
+
+.vp-checkbox {
+    overflow: hidden;
+    display: inline;
+    &:hover {
+        & .vp-font {
+            color: #4475e8;
+        }
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input:disabled+.vp-font {
+        color: #d9d9d9 !important;
+    }
+    input:disabled:checked+.vp-font {
+        color: #f3f3f3 !important;
+        background-color: #d9d9d9;
+        border-radius: 3px;
+        font-size: 14px !important;
+        width: 14.5px;
+        margin-right: 7px;
+    }
+    &-label {
+        cursor: pointer;
+        margin-right: 32px;
+        position: relative;
+        padding-left: 20px;
+    }
+    &-disable>* {
+        color: #ccc;
+        cursor: not-allowed;
+    }
+    .vp-font {
+        position: absolute;
+        line-height: 14px;
+        margin-right: 6px;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+}

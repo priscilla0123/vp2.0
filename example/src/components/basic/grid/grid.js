@@ -11,6 +11,7 @@ export default {
             rowgap: 10,
             colsize:12,
             coloffset:0,
+            colcenter:false,
             show: true
         }
     },

@@ -6,7 +6,7 @@ import {
 } from '../../../../../dist/vp';
 
 export default {
-    data() {
+    data:function() {
         return {
             show:true,
             type: '',
@@ -20,7 +20,7 @@ export default {
             vertical:''
         }
     },
-    mounted() {
+    mounted:function() {
         let _this = this;
     },
     methods:{

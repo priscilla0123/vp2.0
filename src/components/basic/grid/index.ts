@@ -1,3 +1,3 @@
 import vpRow from "./row";
-import vpCol from "./col"; 
-export {vpRow,vpCol};
+import vpCol from "./col";
+export { vpRow, vpCol };

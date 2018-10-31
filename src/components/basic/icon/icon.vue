@@ -2,7 +2,7 @@
 <!-- authed by sunjia032 2018-07-24 -->
 
 <template>
-    <i :class="'vp-icon-' + name" class="vp-font" :style="{fontSize: size + 'px',color:color}"></i>
+    <i :class="'vp-icon-' + name" class="vp-font" :style="{fontSize: size + 'px',color:color}" @click="onclick"></i>
 </template>
 
 <script lang="ts" src="./icon.tsx"></script>

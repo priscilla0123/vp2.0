@@ -1,5 +1,5 @@
 <template>
-    <vp-row class="example_button" justify="center"> 
+    <vp-row class="example example_button" justify="center"> 
         <vp-col size="11" style="line-height:40px">
             <div class="title">Button Specification</div>
             <table>
@@ -89,40 +89,40 @@
         <vp-col size="10">
             <div class="title">Button Example</div>
             <vp-row class="vp-color-bg" v-if="show"> 
-                <vp-col size="1"><div style="font-weight:bold">Size / Type</div></vp-col>  
-                <vp-col size="2"><div style="font-weight:bold">normal</div></vp-col>  
-                <vp-col size="2"><div style="font-weight:bold">hollow</div></vp-col>  
-                <vp-col size="2"><div style="font-weight:bold">dashed</div></vp-col>  
-                <vp-col size="2"><div style="font-weight:bold">text</div></vp-col>  
-                <vp-col size="3"><div style="font-weight:bold">--</div></vp-col>
+                <vp-col center size="1"><div style="font-weight:bold">Size / Type</div></vp-col>  
+                <vp-col center size="2"><div style="font-weight:bold">normal</div></vp-col>  
+                <vp-col center size="2"><div style="font-weight:bold">hollow</div></vp-col>  
+                <vp-col center size="2"><div style="font-weight:bold">dashed</div></vp-col>  
+                <vp-col center size="2"><div style="font-weight:bold">text</div></vp-col>  
+                <vp-col center size="3"><div style="font-weight:bold">--</div></vp-col>
                 <!--  -->
-                <vp-col size="1"><div style="font-weight:bold">small</div></vp-col>  
-                <vp-col size="2"><div size="large"><vp-btn size="small">确定</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="small" type="hollow">OK</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="small" type="dashed">取消</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="small" type="text">Cancel</vp-btn></div></vp-col>
-                <vp-col size="3"><div><vp-btn size="small" :shape="shape" :disable="disable" :color="color" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
+                <vp-col center size="1"><div style="font-weight:bold">small</div></vp-col>  
+                <vp-col center size="2"><div size="large"><vp-btn size="small">确定</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="small" type="hollow">OK</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="small" type="dashed">取消</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="small" type="text">Cancel</vp-btn></div></vp-col>
+                <vp-col center size="3"><div><vp-btn size="small" :shape="shape" :disable="disable" :color="color" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
                 <!--  -->
-                <vp-col size="1"><div style="font-weight:bold">normal</div></vp-col>  
-                <vp-col size="2"><div><vp-btn>确定</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn type="hollow">ok</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn type="dashed">取消</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn type="text">Cancel</vp-btn></div></vp-col>
-                <vp-col size="3" :shape="shape"><div><vp-btn :shape="shape" :disable="disable" :color="color" type="hollow" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
+                <vp-col center size="1"><div style="font-weight:bold">normal</div></vp-col>  
+                <vp-col center size="2"><div><vp-btn>确定</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn type="hollow">ok</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn type="dashed">取消</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn type="text">Cancel</vp-btn></div></vp-col>
+                <vp-col center size="3" :shape="shape"><div><vp-btn :shape="shape" :disable="disable" :color="color" type="hollow" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
                 <!--  -->
-                <vp-col size="1"><div style="font-weight:bold">large</div></vp-col>  
-                <vp-col size="2"><div><vp-btn size="large">确定</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="large" type="hollow">ok</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="large" type="dashed">取消</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn size="large" type="text">Cancel</vp-btn></div></vp-col>
-                <vp-col size="3"><div><vp-btn size="large" :shape="shape" :disable="disable" :color="color" type="dashed" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
+                <vp-col center size="1"><div style="font-weight:bold">large</div></vp-col>  
+                <vp-col center size="2"><div><vp-btn size="large">确定</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="large" type="hollow">ok</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="large" type="dashed">取消</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn size="large" type="text">Cancel</vp-btn></div></vp-col>
+                <vp-col center size="3"><div><vp-btn size="large" :shape="shape" :disable="disable" :color="color" type="dashed" :icon="Icon" :iconafter="Iconafter">确定</vp-btn></div></vp-col>
                 <!--  -->
-                <vp-col size="1"><div style="font-weight:bold">userdefine</div></vp-col>  
-                <vp-col size="2"><div><vp-btn ref="usersize" :size="Size">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn ref="usersize" :size="Size" type="hollow">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn ref="usersize" :size="Size" type="dashed">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
-                <vp-col size="2"><div><vp-btn ref="usersize" :size="Size" type="text">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col> 
-                <vp-col size="3"><div><vp-btn ref="usersize" :size="Size" :shape="shape" :disable="disable" :color="color" type="text" :icon="Icon" :iconafter="Iconafter">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>  
+                <vp-col center size="1"><div style="font-weight:bold">userdefine</div></vp-col>  
+                <vp-col center size="2"><div><vp-btn ref="usersize" :size="Size">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn ref="usersize" :size="Size" type="hollow">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn ref="usersize" :size="Size" type="dashed">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>
+                <vp-col center size="2"><div><vp-btn ref="usersize" :size="Size" type="text">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col> 
+                <vp-col center size="3"><div><vp-btn ref="usersize" :size="Size" :shape="shape" :disable="disable" :color="color" type="text" :icon="Icon" :iconafter="Iconafter">{{'h:'+sizeH+' w:'+sizeW}}</vp-btn></div></vp-col>  
             </vp-row>          
         </vp-col> 
         <vp-col size="11" style="line-height:40px">

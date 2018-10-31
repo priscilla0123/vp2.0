@@ -1,5 +1,5 @@
 <template>
-    <vp-row class="example_icon" justify="center"> 
+    <vp-row class="example example_icon" justify="center"> 
         <vp-col size="10" style="line-height:40px">
             <div class="title">Icon Specification</div>
             <table>
@@ -47,7 +47,7 @@
         <vp-col size="10">
             <div class="title">Icon Example(all valid prop:name is listed)</div>
             <vp-row class="vp-color-bg">
-                <vp-col :key="name" v-for="name in namelist" size="1"><div>
+                <vp-col center :key="name" v-for="name in namelist" size="1"><div>
                     {{name}}
                     <vp-icon :name="name" :size="size" :color="color"></vp-icon>
                 </div></vp-col>                 

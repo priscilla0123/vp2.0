@@ -146,3 +146,52 @@ span {
 .vp-color-tooltip-bg {
   background-color: rgba(225, 225, 225, 0.7);
 }
+/* ------- color -------*/
+/*蓝*/
+/*浅蓝*/
+/*橙*/
+/*红*/
+/*浅红*/
+/*黄*/
+/*浅黄*/
+/*绿*/
+/*浅绿*/
+/*紫*/
+/*黑*/
+/*深灰*/
+/*灰*/
+/*浅灰*/
+/*浅灰*/
+/* ------- font -------*/
+/* ------- grid -------*/
+/* ------- structure -------*/
+/* 导航高度 */
+/* 菜单宽度 */
+/* 导航文字颜色 */
+.vp-form-label {
+  color: #666;
+  width: 72px;
+  margin-right: 24px;
+  text-align: left;
+}
+.vp-form-label:before {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  text-align: center;
+}
+.vp-form-label.vp-require:before {
+  content: '*';
+}
+.vp-form-label.vp-disable {
+  color: #ccc;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

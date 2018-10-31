@@ -1,0 +1,30 @@
+@import '../../style/var.less';
+.vp-form-label {
+    color: @color_text;
+    width: 72px;
+    margin-right: 24px; 
+    text-align: left;
+    &:before {
+        content: ' ';
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        text-align: center;
+    }
+    &.vp-require:before {
+        content: '*';
+    }
+    &.vp-disable {
+        color: @color_plain;
+    }
+}
+.fade {
+    &-enter-active,
+    &-leave-active {
+        transition: opacity .3s;
+    }
+    &-enter,
+    &-leave-to {
+        opacity: 0;
+    }
+}

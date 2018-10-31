@@ -10,4 +10,8 @@ export default class Icon extends Vue {
     @Prop({ default: '', required: true }) name!: String;
     @Prop({ default: 14 }) size!: String | Number;
     @Prop({ default: null }) color!: String;
+
+    onclick(){
+        this.$emit('click');
+    }
 }

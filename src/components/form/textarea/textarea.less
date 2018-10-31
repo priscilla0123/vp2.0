@@ -1,0 +1,87 @@
+/* src/components/form/textarea/textarea.less */
+/* authed by sunjia032 2018-08-16*/
+
+@import '../../../style/var.less';
+
+.vp-textarea {
+    display: inline-flex;
+    align-items:top;
+    line-height: 30px;
+    padding-top: 2px;
+    &-wrap { 
+        position: relative; 
+        line-height: 22px; 
+    }
+    &-text {
+        width: 400px;
+        height: 136px;
+        padding: 8px;
+        resize:none;
+        box-sizing:border-box;
+        font-size: 12px;
+        border: 1px solid #999;
+        border-radius: 2px;
+        color: @color_title;
+        &:hover,
+        &:focus {
+            border: 1px solid @color_main;
+        }
+        &.vp-error {
+            border: 1px solid @color_danger !important;
+            outline-color: @color_danger;
+        }
+        &:disabled {
+            border: 1px solid @color_disable !important;
+            background-color: @color_bg;
+            color: @color_subtext;
+            &::placeholder {
+                color: @color_plain;
+            }
+
+        } 
+    }
+    &-count{        
+        color:#666;
+        &.vp-error{
+            color: @color_danger;
+        }
+    }
+    &-max{
+        padding-left: 3px;
+        color:#666 !important;
+    } 
+    &-label {
+        color: @color_text;
+        width: 72px;
+        margin-right: 24px;
+        display: inline-block;
+        text-align: left;
+        &:before {
+            content: ' ';
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            text-align: center;
+        }
+        &.vp-require:before {
+            content: '*';
+        }
+        &.vp-disable {
+            color: @color_plain;
+        }
+    }
+    &-error {
+        color: @color_danger;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 8px;
+        float: right;
+        max-width: 80%;
+    } 
+}
+.vp-textarea-text:disabled + br + .vp-textarea-count{
+    color: @color_plain;
+    .vp-textarea-max{
+        color: @color_plain !important;
+    }
+}

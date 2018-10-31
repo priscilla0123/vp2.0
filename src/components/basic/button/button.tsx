@@ -14,8 +14,7 @@ const Colors: Array < String >= ['main', 'sys', 'danger', 'warn', 'success', 'hi
         vpIcon
     }
 })
-export default class Btn extends Vue {
-    
+export default class Btn extends Vue {    
     @Prop({ default: null }) type!: String | Number;
     @Prop({ default: null }) color!: String;
     @Prop({ default: null }) size!: String | Array < Number > ;
@@ -33,7 +32,7 @@ export default class Btn extends Vue {
         this.$el.style.borderRadius = this.$el.offsetHeight / 2 + 'px';
     }
 
-    get Style(): any {
+    get Style(): any { 
         let style: any;
         style = {};
         if (this.size && typeof this.size == 'object') {
@@ -42,6 +41,8 @@ export default class Btn extends Vue {
                 style.fontSize = this.size[2] + 'px';
                 this.iconSize = style.fontSize;
             }
+            style.minWidth='0';
+            style.padding='0';
         }
         if (this.color && Colors.indexOf(this.color) == -1) {
             style.backgroundColor = this.color;

@@ -7,22 +7,19 @@
     <title>Vpui2.0</title>
     <link rel="shortcut icon" type="image/x-icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
     <link rel="stylesheet" type="text/css" href="../../dist/vp.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <vp-layout id="app">
-    	<vp-header>Vpui 2.0</vp-header>
-        <vp-layout>
-            <vp-side klass="vp-color-sys-bg">
-                <vp-tree :data="tree"></vp-tree>
-            </vp-side>
-            <vp-content>
-            <keep-alive>
+    	<div slot="header">Vpui 2.0</div>
+        <vp-layout> 
+            <vp-tree class="vp-color-sys-bg" slot="left" :data="tree" style="flex:1" width="120"></vp-tree>  
+            <keep-alive slot="content">
                 <router-view></router-view>
-            </keep-alive>
-            </vp-content>
+            </keep-alive> 
         </vp-layout>    	
-    	<vp-footer>Welcome To VPUI 2.0@2018~Authed by Priscilla Sun(sunjia032)</vp-footer>
+    	<div slot="footer">Welcome To VPUI 2.0@2018~Authed by Priscilla Sun(sunjia032)</div>
     </vp-layout>
 </body>
 </html>
